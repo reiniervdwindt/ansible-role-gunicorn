@@ -1,0 +1,5 @@
+---
+# Application
+application_name: "default"
+application_path: "/app/{{ application_name }}"
+application_venv: "{{ application_path }}/venv"

@@ -7,4 +7,4 @@
   file: path="{{ application_path }}/shared/run" state=directory mode=0755
 
 - name: "Create the gunicorn script file"
-  template: src=gunicorn_start.j2 dest="{{ application_venv }}/bin/gunicorn_start" mode=0755
+  template: src="{{ gunicorn_template }}" dest="{{ application_venv }}/bin/gunicorn_start" mode=0755
